@@ -5,10 +5,8 @@
 <p>NRP : c14180073</p>
 <p>Nama : Tifany S</p>
 
-<<<<<<< HEAD
 <button type="button">KLIK HERE</button>
 <button type="button">DONE</button>
-=======
 <input type="date" data-date-format="DD MMMM YYYY" id="hari" name="hari">
 <input type="date" data-date-format="DD MMMM YYYY" id="hari1" name="hari1">
     <button type="button" onclick= "calculate()">calculate</button>
@@ -24,7 +22,56 @@
         }
     </script>
 
->>>>>>> c14180073-E
+<p>
+git branch newImage = membuat variabel baru yaitu newImage
+git commit = menghasilkan c baru sesuai letak variabel yang ada *
+git checkout newImage = membuat newImage menjadi ada *
+
+git merge bugFix = menggabungkan 2 c menjadi 1 dengan cara memunculkan c baru sesuai letak *
+
+git rebase main = mengubah letak variabel * dibawah c main (main tidak ada *)
+git rebase main bugFix = mengubah letak variabel tidak ada * (yaitu bugFix) kebawah main (yang ada *)
+
+git checkout c2 = melihat letak head
+git checkout HEAD~ = keluarkan head diatasnya dari variabel *
+
+git checkout main^ = mengeluarkan head dan menaruh head di c depannya
+^ = naik diatasnya
+git checkout main^2 = mengeluarkan head dari c1 ke c2 (head ada di c2)
+
+git checkout HEAD~4 = mengeluarkan HEAD dan naik 4 diatasnya
+git branch -f main = mengubah letak main menuju c yang ada variabel * nya
+git branch -f main HEAD~3 = mengeluarkan main dan naik 3 diatasnya tanpa mengubah *
+git branch -f main C6 = mengubah posisi main yang awalnya di c4 menjadi di c6 tanpa memerlukan *
+
+git reset HEAD~1 = 
+git revert HEAD = letak dari branch yang ada * menghasilkan c baru dibawahnya
+
+git cherry-pick C2 C4 = membuat c2* dan c4* dibawah branch yang ada *
+git rebase -i HEAD~4 = mengambil 4 buah c dari branch *. lalu pilih mau di rebase apa saja c nya. jika omit di pencet, maka tidak akan muncul di rebase
+
+git tag v1 c1 = memberi label tag v1 di lokasi c1
+
+git clone = mengcloning seperti awalnya
+
+git fetch = mengcopy dari letak variabel * (copy dari cloning)
+git fetch origin foo:main = mengcopy c letak foo untuk membuat c baru buat main
+git fetch origin :bar = menghasilkan variabel bar di asli
+
+git pull = menghasilkan cabang dari copy cloding. berdasarkan letak variabel *. dan variabel lain menurun
+
+git fakeTeamwork = menghasilkan c baru di cloning tanpa mengubah yang aslinya
+git fakeTeamwork foo 3 = menghasilkan 3 c baru di cloning, lalu c paling akhir terdapat foo
+
+git push = menghasilkan cabang di copy dan menurunkan semua variabel ke bawah letak variabel *
+
+git pull --rebase = membuat cabang lalu membuat c baru
+git pull origin main:foo = membuat foo di main lalu menghasilkan cabang baru berisi foo. lalu menurunkan variabel lain yang ada di cabang lain
+
+git push origin main = mengubah letak o/main dari c1 turun ke c2 (cabangnya) yg ada mainnya
+git push origin :foo = menghapus foo yang ada di asli dan cloning
+
+</p>
 
 </body>
 </html>
