@@ -6,22 +6,20 @@
 <p>Nama : Tifany S</p>
 
 <input type="date" data-date-format="DD MMMM YYYY" id="hari" name="hari">
+<input type="date" data-date-format="DD MMMM YYYY" id="hari1" name="hari1">
     <button type="button" onclick= "calculate()">calculate</button>
     <p id="day"></p>
     <br>
 
     <script>
         function calculate() {
-            var today = new Date();
             var tgl = new Date (document.getElementById("hari").value);
-            var total = Math.floor((today - tgl) / (1000 * 60 * 60 * 24));
-            if (total < 0) {
-                total = total * -1;
-            }
+            var tgl1 = new Date (document.getElementById("hari1").value);
+            var total = Math.floor((tgl1 - tgl) / (1000 * 60 * 60 * 24));
             document.getElementById("day").innerHTML = " Selisihnya = "+ total;
-
         }
     </script>
+
 
 </body>
 </html>
