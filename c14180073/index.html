@@ -5,8 +5,26 @@
 <p>NRP : c14180073</p>
 <p>Nama : Tifany S</p>
 
+<<<<<<< HEAD
 <button type="button">KLIK HERE</button>
 <button type="button">DONE</button>
+=======
+<input type="date" data-date-format="DD MMMM YYYY" id="hari" name="hari">
+<input type="date" data-date-format="DD MMMM YYYY" id="hari1" name="hari1">
+    <button type="button" onclick= "calculate()">calculate</button>
+    <p id="day"></p>
+    <br>
+
+    <script>
+        function calculate() {
+            var tgl = new Date (document.getElementById("hari").value);
+            var tgl1 = new Date (document.getElementById("hari1").value);
+            var total = Math.floor((tgl1 - tgl) / (1000 * 60 * 60 * 24));
+            document.getElementById("day").innerHTML = " Selisihnya = "+ total;
+        }
+    </script>
+
+>>>>>>> c14180073-E
 
 </body>
 </html>
